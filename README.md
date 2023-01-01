@@ -37,6 +37,7 @@ Then, using the relative filepath, add it to your README using the following syn
 ## Credits
 
 Express: https://www.youtube.com/watch?v=SccSCuHhOw0&list=PLqYZ6lteos1kTcHDwOtYULgnZbcZ0Aqo4&index=29
+Handlebars: https://www.youtube.com/watch?v=4HuAnM6b2d8
 
 ## License
 
