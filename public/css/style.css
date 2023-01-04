@@ -1,3 +1,54 @@
-h1 {
-    color: blue;
+:root {
+    --black: #000000;
+    --lightgrey: #b3b3b3;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--lightgrey);
+}
+
+.jumbotron {
+    font-family: 'Passions Conflict', cursive;
+    border: 1px solid var(--black);
+}
+
+.login-h1 {
+    font-size: 75px;
+}
+
+@media only screen and (max-width: 450px) {
+    .login-h1 {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (max-width: 395px) {
+    .login-h1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .login-h1 {
+        font-size: 40px;
+    }
+}
+
+
+
+.form-container {
+    margin-bottom: 15px;
+}
+
+.login-h1 {
+    align-content: center;
+}
+
+.login_form {
+    text-align: center;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    box-shadow: 15px 10px 18px;
 }
