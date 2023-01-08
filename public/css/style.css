@@ -4,9 +4,9 @@
     --white: #ffffff;
 }
 
-body {
+/* body {
     background-color: var(--lightgrey);
-}
+} */
 
 .jumbotron {
     font-family: 'Passions Conflict', cursive;

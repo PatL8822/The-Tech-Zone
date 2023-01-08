@@ -8,4 +8,8 @@ router.get('/createAccount', async (req, res) => {
     res.render('createAccount')
 });
 
+router.get('/blog', async (req, res) => {
+    res.render('blog')
+});
+
 module.exports = router;
