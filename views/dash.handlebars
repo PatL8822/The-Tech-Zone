@@ -1,0 +1,19 @@
+<div class="homePageHeading">
+    <h1 class="blog-h1 googlefont">~~ The Tech-Blog ~~</h1>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            {{#if loggedIn}}
+            <a class="nav-link" href="#">Logout</a>
+            {{/if}}
+        </li>
+        <li class="nav-item">
+            <p class='nav-link'>User: <span>{{name}}</span></p>
+        </li>
+    </ul>
+</div>

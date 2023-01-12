@@ -7,14 +7,14 @@
 </header>
 
 <div class="form-container d-flex justify-content-center">
-    <form class=" p-3 login_form">
+    <form class=" p-3 login_form" id="createAccount">
         <div class="mb-4">
             <label for="userName" class="form-label">User Name</label>
-            <input type="text" class="form-control " id="userName" aria-describedby="emailHelp">
+            <input type="text" class="form-control " id="createUserName" aria-describedby="emailHelp">
         </div>
         <div class="mb-4">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="createPw" minlength="4" maxlength="20">
+            <input type="password" class="form-control" id="createPassword" minlength="4" maxlength="20">
             <p>Password must be longer then four characters.</p>
         </div>
         <div class="mb-4">
@@ -26,3 +26,5 @@
         </div>
     </form>
 </div>
+
+<script src="/js/signup.js"></script>

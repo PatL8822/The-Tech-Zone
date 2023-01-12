@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS techzone;
+CREATE DATABASE techzone;
