@@ -4,8 +4,6 @@ function pwcheck(e) {
     const password = document.querySelector('#createPassword').value.trim();
     const confirmPw = document.querySelector('#confirmPw').value.trim();
 
-    console.log(password)
-    console.log(confirmPw)
     if (password === confirmPw) {
         signUphHandler();
     } else {

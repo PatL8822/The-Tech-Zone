@@ -20,8 +20,14 @@ router.get('/home', withAuth, async (req, res) => {
     });
 });
 
-// router.get('/dash', async (req, res) => {
-//     res.render('dash', { title: 'Dashboard' })
-// });
+router.get('/dash', withAuth, async (req, res) => {
+    const userId = req.session.user_id
+    const user = await User.findByPk(userId)
+    res.render('dash', {
+        loggedIn: req.session.loggedIn,
+        username: user.username,
+        title: 'Dashboard'
+    })
+});
 
 module.exports = router;
