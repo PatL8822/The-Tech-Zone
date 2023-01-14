@@ -16,20 +16,29 @@
         </li>
     </ul>
 </div>
-<fieldset>
-    <legend>Your Posts</legend>
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="#" class="btn btn-dark">Edit</a>
-        </div>
-    </div>
-</fieldset>
 
-<div id="postBTNContainer" class="text-center fixed-bottom"><button id="makePost" type="button"
+<div id="postBTNContainer" class="text-center"><button id="makePost" type="button"
         class="btn btn-secondary mx-auto">Make New
         Post</button>
 </div>
 
+<fieldset>
+    <legend>Your Posts</legend>
+    {{#each posts as |post|}}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{post.name}}</h5>
+            <p class="card-text">{{post.description}}</p>
+            <button class="btn btn-dark">Edit</button>
+            <div class="float-right">
+                <button class="btn btn-dark">Delete</button>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</fieldset>
+
+
+
 <script src="/js/logout.js"></script>
+<script src="/js/post.js"></script>

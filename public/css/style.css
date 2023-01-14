@@ -87,6 +87,14 @@ legend {
     color: var(--white);
 }
 
+textarea {
+    resize: none;
+}
+
+#postBTNContainer {
+    margin-top: 15px;
+}
+
 .hide {
     display: none;
 }

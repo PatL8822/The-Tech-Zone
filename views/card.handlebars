@@ -1,7 +1,32 @@
-<div class="card">
-    <div class="card-body">
-        <h5 class="card-title">Special title:<input id="postTittle"> </h5>
-        <p class="card-text"><textarea id="postBody" placeholder="Enter your message here."></textarea></p>
-        <button id="submitPostBTN" type="submit">Submit</button>
-    </div>
+<div class="homePageHeading">
+    <h1 class="blog-h1 googlefont">~~ The Tech-Blog ~~</h1>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link active" href='/home'>Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/dash">Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <button id="btn" type="button">Logout</button>
+            {{!-- <a class="nav-link" href="#">Logout</a> --}}
+        </li>
+        <li class="nav-item">
+            <p class='nav-link'>User: <span>{{username}}</span></p>
+        </li>
+    </ul>
 </div>
+<fieldset>
+    <legend>New Posts</legend>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Title of post:<input id="postTittle"> </h5>
+            <p class="card-text"><textarea id="postBody" placeholder="Enter your message here." rows="6"
+                    cols="50"></textarea></p>
+            <button id="submitPostBTN" type="submit">Submit</button>
+        </div>
+    </div>
+</fieldset>
+
+<script src="/js/logout.js"></script>
+<script src="/js/post.js"></script>

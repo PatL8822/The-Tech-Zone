@@ -11,7 +11,6 @@ Posts.init(
             allowNull: false,
             primaryKey: true,
             autoIncrement: true
-
         },
         name: {
             type: DataTypes.STRING,
@@ -34,7 +33,7 @@ Posts.init(
         timeStamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'guesses'
+        modelName: 'posts'
     }
 )
 
