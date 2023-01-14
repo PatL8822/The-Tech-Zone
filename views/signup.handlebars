@@ -10,16 +10,17 @@
     <form class=" p-3 login_form" id="createAccount">
         <div class="mb-4">
             <label for="userName" class="form-label">User Name</label>
-            <input type="text" class="form-control " id="createUserName" aria-describedby="emailHelp">
+            <input type="text" class="form-control " id="createUserName" aria-describedby="emailHelp" required="true">
         </div>
         <div class="mb-4">
             <label for="password" class="form-label">Password</label>
-            <input type="password" class="form-control" id="createPassword" minlength="4" maxlength="20">
+            <input type="password" class="form-control" id="createPassword" minlength="4" maxlength="20"
+                required="true">
             <p>Password must be longer then four characters.</p>
         </div>
         <div class="mb-4">
             <label for="password" class="form-label">Re-Enter Password</label>
-            <input type="password" class="form-control " id="confirmPw" minlength="4" maxlength="20">
+            <input type="password" class="form-control " id="confirmPw" minlength="4" maxlength="20" required="true">
         </div>
         <div>
             <button type="submit" class="btn btn-primary text-wrap" id="createBTN">Create Account</button>

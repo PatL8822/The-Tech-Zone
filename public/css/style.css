@@ -49,6 +49,15 @@ span {
     font-size: 80px;
 }
 
+#btn {
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
+
 @media only screen and (max-width: 492px) {
     .login-h1 {
         font-size: 55px;

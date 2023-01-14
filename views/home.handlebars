@@ -8,12 +8,12 @@
             <a class="nav-link" href="../views/dash.handlebars">Dashboard</a>
         </li>
         <li class="nav-item">
-            {{#if loggedIn}}
-            <a class="nav-link" href="#">Logout</a>
-            {{/if}}
+            <button id="btn" type="button">Logout</button>
+            {{!-- <a class="nav-link" href="#">Logout</a> --}}
         </li>
         <li class="nav-item">
-            <p class='nav-link'>User: <span>{{name}}</span></p>
+            <p class='nav-link'>User: <span>{{username}}</span></p>
         </li>
     </ul>
 </div>
+<script src="/js/logout.js"></script>

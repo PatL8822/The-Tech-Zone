@@ -7,7 +7,7 @@
 </header>
 
 <div class="form-container d-flex justify-content-center">
-    <form class=" p-3 login_form">
+    <form class=" p-3 login_form" id="loginForm">
         <div class="mb-4">
             <label for="userName" class="form-label">User Name</label>
             <input type="text" class="form-control " id="userName" aria-describedby="emailHelp">
@@ -20,7 +20,9 @@
             <button type="submit" class="btn btn-primary">Login</button>
         </div>
         <div>
-            <button type="button" class="btn btn-primary text-wrap">Create Account</button>
+            <button id="btnCreateAccount" type="button" class="btn btn-primary text-wrap">Create Account</button>
         </div>
     </form>
 </div>
+
+<script src="/js/login.js"></script>
