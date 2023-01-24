@@ -16,18 +16,21 @@
     </ul>
 </div>
 <fieldset>
-    <legend>New Posts</legend>
+    <legend>Edit Post</legend>
     <div class="card">
         <div class="card-body">
-            <h2 class="card-title form-control">Title of post:<input type="text" id="postTittle" class="form-control">
+            <h2 class="card-title form-control">Title of post:
+                <input type="hidden" name="post-id" value="{{postId}}">
+                <input id="postTittle" class="form-control" value="{{name}}">
             </h2>
             <h5 id="postBy" class="card-title form-control">Posted By: {{username}}</h5>
             <p class="card-text"><textarea id="postBody" class="form-control" placeholder="Enter your message here."
-                    rows="6"></textarea></p>
-            <button class="new-post-btn" type="button">Submit</button>
+                    rows="6">{{description}}</textarea></p>
+            <button id='editBtn' type="button">Update</button>
         </div>
     </div>
 </fieldset>
 
 <script src="/js/logout.js"></script>
 <script src="/js/post.js"></script>
+<script src="/js/edit.js"></script>

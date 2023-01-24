@@ -5,7 +5,7 @@ const newPostHandler = async (e) => {
     const description = document.querySelector('#postBody').value.trim();
 
     if (name && description) {
-        const response = await fetch(`/api/post/newpost`, {
+        const response = await fetch(`/api/post/addpost`, {
             method: 'POST',
             body: JSON.stringify({ name, description }),
             headers: {
@@ -21,8 +21,4 @@ const newPostHandler = async (e) => {
     }
 };
 
-const makeNewPostBTN = async function newPost() {
-    document.location.replace(`/card`)
-}
-
-document.querySelector('#postBTNContainer').addEventListener('click', makeNewPostBTN);
+document.querySelector('.new-post-btn').addEventListener('click', newPostHandler);

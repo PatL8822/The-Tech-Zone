@@ -8,37 +8,39 @@
             <a class="nav-link" href="/dash">Dashboard</a>
         </li>
         <li class="nav-item">
-            <button id="btn" type="button">Logout</button>
-            {{!-- <a class="nav-link" href="#">Logout</a> --}}
+            <p class='nav-link'>User: <span>{{username}}</span></p>
         </li>
         <li class="nav-item">
-            <p class='nav-link'>User: <span>{{username}}</span></p>
+            <button id="btn" type="button">Logout</button>
         </li>
     </ul>
 </div>
 
-<div id="postBTNContainer" class="text-center"><button id="makePost" type="button"
-        class="btn btn-secondary mx-auto">Make New
+<section class="text-center mt-5"><button type="click" class="newPost btn btn-secondary aline-center ">Make New
         Post</button>
-</div>
+</section>
 
 <fieldset>
     <legend>Your Posts</legend>
-    {{#each posts as |post|}}
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title">{{post.name}}</h5>
-            <p class="card-text">{{post.description}}</p>
-            <button class="btn btn-dark">Edit</button>
-            <div class="float-right">
-                <button class="btn btn-dark">Delete</button>
+    <div class="deletepost">
+        {{#each posts as |post|}}
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title form-control">{{post.name}}</h2>
+                <h5 class="card-title form-control">Posted By:</h5>
+                <p class="card-text form-control">{{post.description}}</p>
+                <div class="d-flex justify-content-around">
+                    <a href="/edit/{{post.id}}" class="btn btn-dark" role="button" aria-pressed="true">Edit</a>
+                    <button id="deletePost" type="button" class="btn btn-dark" data-id="{{post.id}}">Delete</button>
+                </div>
             </div>
         </div>
+        {{/each}}
     </div>
-    {{/each}}
 </fieldset>
 
-
-
 <script src="/js/logout.js"></script>
-<script src="/js/post.js"></script>
+<script src="/js/dash.js"></script>
+
+<script src="/js/delete.js"></script>
+<script src="/js/edit.js"></script>

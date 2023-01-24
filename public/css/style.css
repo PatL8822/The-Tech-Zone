@@ -80,7 +80,16 @@ legend {
 }
 
 .card p {
+    margin: 10px auto;
+    width: 58%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--black);
     text-align: center;
+
+}
+
+.card h2 {
+    font-style: italic;
 }
 
 .btn-dark {
@@ -89,10 +98,6 @@ legend {
 
 textarea {
     resize: none;
-}
-
-#postBTNContainer {
-    margin-top: 15px;
 }
 
 .hide {
@@ -108,6 +113,13 @@ textarea {
         font-family: 'Passions Conflict', cursive;
         font-size: 60px;
     }
+
+    fieldset {
+        margin: 15px auto;
+        border: 1px solid var(--black);
+        border-radius: 5px;
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 395px) {
@@ -118,6 +130,13 @@ textarea {
     .googlefont {
         font-family: 'Passions Conflict', cursive;
         font-size: 55px;
+    }
+
+    fieldset {
+        margin: 15px auto;
+        border: 1px solid var(--black);
+        border-radius: 5px;
+        width: 90%;
     }
 }
 
@@ -130,6 +149,13 @@ textarea {
         font-family: 'Passions Conflict', cursive;
         font-size: 50px;
     }
+
+    fieldset {
+        margin: 15px auto;
+        border: 1px solid var(--black);
+        border-radius: 5px;
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 280px) {
@@ -140,5 +166,12 @@ textarea {
     .googlefont {
         font-family: 'Passions Conflict', cursive;
         font-size: 40px;
+    }
+
+    fieldset {
+        margin: 15px auto;
+        border: 1px solid var(--black);
+        border-radius: 5px;
+        width: 90%;
     }
 }
