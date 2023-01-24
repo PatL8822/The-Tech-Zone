@@ -2,45 +2,14 @@
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+For this project i was wanting to learn handlebars, mysql2 and sequelize. So i built this tech blog to help set the foundations of learning the daft structure file routing and setting the URL correctly. The biggest challenge for me was learning the process of CRUD Create, Read, Update/PUT and Delete. Being able to obtain the id was my biggest challenge.
 
 ## Table of Contents (Optional)
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
 - [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
 - [License](#license)
-
-## Installation
-
-What are the steps required to install your project? 
-Provide a step-by-step description of how to get the development environment running.
-
-## Usage
-
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. 
-Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
-## Credits
-
-Express: https://www.youtube.com/watch?v=SccSCuHhOw0&list=PLqYZ6lteos1kTcHDwOtYULgnZbcZ0Aqo4&index=29
-Handlebars: https://www.youtube.com/watch?v=4HuAnM6b2d8
-
-character length: https://www.geeksforgeeks.org/how-to-specify-minimum-maximum-number-of-characters-allowed-in-an-input-field-in-html/
-
 ## License
 
 MIT License
@@ -66,7 +35,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Screen Shot
-
-
+![Screenshot (45)](https://user-images.githubusercontent.com/110148234/214227351-ebd3cd3c-44aa-4f2f-aebb-0436e90afa88.png)
+![Screenshot (44)](https://user-images.githubusercontent.com/110148234/214227355-10666393-874c-488b-b056-aa5cb1cf0f96.png)
 
 ## Link to work
