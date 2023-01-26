@@ -4,7 +4,8 @@
   "description": "Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:",
   "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
